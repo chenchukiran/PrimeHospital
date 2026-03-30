@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function Hero() {
   return (
     <section
@@ -21,27 +23,29 @@ export default function Hero() {
         </p>
 
         <div className="mt-8 flex flex-wrap justify-center gap-4">
-  <a
-    href="/book"
-    className="rounded-lg bg-primary px-6 py-3 font-semibold text-white shadow-lg transition duration-300 hover:bg-white hover:text-primary"
-  >
-    Book Appointment
-  </a>
+          
+          <Link
+            to="/book"
+            className="rounded-lg bg-primary px-6 py-3 font-semibold text-white shadow-lg transition duration-300 hover:bg-white hover:text-primary"
+          >
+            Book Appointment
+          </Link>
 
-  <a
-    href="/departments"
-    className="rounded-lg bg-primary px-6 py-3 font-semibold text-white shadow-lg transition duration-300 hover:bg-white hover:text-primary"
-  >
-    Our Departments
-  </a>
+          <Link
+            to="/departments"
+            className="rounded-lg bg-primary px-6 py-3 font-semibold text-white shadow-lg transition duration-300 hover:bg-white hover:text-primary"
+          >
+            Our Departments
+          </Link>
 
-  <a
-    href="/doctors"
-    className="rounded-lg bg-primary px-6 py-3 font-semibold text-white shadow-lg transition duration-300 hover:bg-white hover:text-primary"
-  >
-    Meet Doctors
-  </a>
-</div>
+          <Link
+            to="/doctors"
+            className="rounded-lg bg-primary px-6 py-3 font-semibold text-white shadow-lg transition duration-300 hover:bg-white hover:text-primary"
+          >
+            Meet Doctors
+          </Link>
+
+        </div>
       </div>
     </section>
   );
